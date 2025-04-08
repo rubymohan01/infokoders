@@ -13,15 +13,16 @@ import Grid from "@mui/material/Grid2"; // Import the CSS module
 
 const OurBlog = () => {
   const blogContent = [
-    {
-      image: "./assets/img/start-up-slide1.webp",
-      content:
-        "A serviceable platform providing awareness of digital payments",
-      path: "/studies/services/digital",
-    },
+    // {
+    //   image: "./assets/img/start-up-slide1.webp",
+    //   content:
+    //     "A serviceable platform providing awareness of digital payments",
+    //   path: "/studies/services/digital",
+    // },
     {
       image: "./assets/img/start-up-slide6.webp",
-      content: "A Remarkable football platform delivering in-depth soccer details",
+      content:
+        "A Remarkable football platform delivering in-depth soccer details",
       path: "/studies/services/platform",
     },
     {
@@ -55,7 +56,7 @@ const OurBlog = () => {
             fontSize: {
               xs: "20px",
               sm: "25px",
-              md:"25px",
+              md: "25px",
               lg: "30px",
             },
           }}
@@ -63,33 +64,33 @@ const OurBlog = () => {
           Our Case Studies
         </Typography>
       </Grid>
-      <Grid container spacing={2} justifyContent="center">
+      <Grid container spacing={2} >
         {blogContent?.map((item, index) => (
           <Grid
-            size={{ xs: 12, sm: 12, md: 6, lg: 3 }}
+            size={{ xs: 12, sm: 12, md: 6, lg: 4 }}
             key={index}
             className={styles.gridItem}
           >
             <Card className={styles.card}>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  className={styles.cardImage}
-                  image={item.image}
-                  alt="Blog Image"
-                />
-                <Box className={styles.overlay} />
-                <Box className={styles.contentBox}>
-                  <Typography className={styles.title1}>
-                    {item.content}
-                  </Typography>
-                  <Link href={item?.path} passHref>
+              <Link href={item?.path} passHref>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    className={styles.cardImage}
+                    image={item.image}
+                    alt="Blog Image"
+                  />
+                  <Box className={styles.overlay} />
+                  <Box className={styles.contentBox}>
+                    <Typography className={styles.title1}>
+                      {item.content}
+                    </Typography>
                     <Typography className={styles.readMore}>
                       Read More
                     </Typography>
-                  </Link>
-                </Box>
-              </CardActionArea>
+                  </Box>
+                </CardActionArea>
+              </Link>
             </Card>
           </Grid>
         ))}

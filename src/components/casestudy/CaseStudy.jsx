@@ -31,13 +31,13 @@ const CaseStudy = () => {
         image: "./assets/img/start-up-slide3.webp",
         path: "/studies/services/schlorship",
       },
-      {
-        title: "A serviceable platform providing awareness of digital payments",
-        description:
-          "Digital payments are accelerating the entrepreneur’s profitability by facilitating them to carry out financial transactions with customers, suppliers, and the governments in a more effective,safer, and cheaper way.",
-        image: "./assets/img/start-up-slide1.webp",
-        path: "/studies/services/digital",
-      },
+      // {
+      //   title: "A serviceable platform providing awareness of digital payments",
+      //   description:
+      //     "Digital payments are accelerating the entrepreneur’s profitability by facilitating them to carry out financial transactions with customers, suppliers, and the governments in a more effective,safer, and cheaper way.",
+      //   image: "./assets/img/start-up-slide1.webp",
+      //   path: "/studies/services/digital",
+      // },
       {
         title: "A full fledged freelance platform",
         description:
@@ -45,13 +45,13 @@ const CaseStudy = () => {
         image: "./assets/img/start-up-slide4.webp",
         path: "/studies/services/freelance",
       },
-      {
-        title: "World’s Popular Biodiversity Assessment tool",
-        description:
-          "A UK based Client came up with the innovative mission of developin an incredible Biodiversity data collection platform for instructing the decision-makers about geographic information of global biodiversity.",
-        image: "./assets/img/start-up-slide5.webp",
-        path: "/studies/services/diversity",
-      },
+      // {
+      //   title: "World’s Popular Biodiversity Assessment tool",
+      //   description:
+      //     "A UK based Client came up with the innovative mission of developin an incredible Biodiversity data collection platform for instructing the decision-makers about geographic information of global biodiversity.",
+      //   image: "./assets/img/start-up-slide5.webp",
+      //   path: "/studies/services/diversity",
+      // },
       {
         title: "A Remarkable football platform",
         description:

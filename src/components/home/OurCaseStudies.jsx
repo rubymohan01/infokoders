@@ -48,11 +48,12 @@ const OurCaseStudies = () => {
         <Grid container spacing={2}>
           {blogContent?.map((item, index) => (
             <Grid
-              size={{ xs: 12, sm: 12, md: 6, lg: 3 }}
+              size={{ xs: 12, sm: 12, md: 6, lg: 4 }}
               key={index}
               className={styles.gridItem}
             >
               <Card className={styles.blogCard}>
+              <Link href={item?.path} passHref>
                 <CardActionArea>
                   <CardMedia
                     component="img"
@@ -65,13 +66,12 @@ const OurCaseStudies = () => {
                     <Typography className={styles.title1}>
                       {item.content}
                     </Typography>
-                    <Link href={item?.path} passHref>
                       <Typography className={styles.readMore}>
                         Read More
                       </Typography>
-                    </Link>
                   </Box>
                 </CardActionArea>
+                </Link>
               </Card>
             </Grid>
           ))}
